@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pydantic
+sentence-transformers
+transformers
+torch
+faiss-cpu
+pyyaml
