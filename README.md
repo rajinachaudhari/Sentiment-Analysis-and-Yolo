@@ -1,2 +1,0 @@
-# ODCRU
-# RAG
