@@ -1,11 +1,17 @@
-import os
+from pathlib import Path
 
-RANDOM_STATE = 42
-TEST_SIZE = 0.25
-MAX_FEATURES = 3000
-EPOCHS = 5
-BATCH_SIZE = 32
+BASE_DIR = Path(__file__).resolve().parent.parent
 
-BASE_RESULTS_DIR = "Results"
+DATA_DIR = BASE_DIR / "data"
+DATA_YAML = DATA_DIR / "data.yaml"
 
-os.makedirs(BASE_RESULTS_DIR, exist_ok=True)
+MODEL_NAME = "yolov8n.pt"
+
+IMG_SIZE = 640
+BATCH_SIZE = 16
+EPOCHS = 50
+CONF_THRESHOLD = 0.4
+
+DEVICE = "cuda"  # or "cpu"
+
+RESULTS_DIR = BASE_DIR / "results"

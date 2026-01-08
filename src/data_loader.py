@@ -1,8 +1,4 @@
-import pandas as pd
+from ultralytics import YOLO
 
-
-def load_data(path: str) -> pd.DataFrame:
-    df = pd.read_csv(path)
-    df.columns = df.columns.str.strip()
-    df = df.dropna(subset=['text', 'sentiment'])
-    return df
+def load_model(model_path: str):
+    return YOLO(model_path)

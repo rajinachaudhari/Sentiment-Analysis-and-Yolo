@@ -1,8 +1,8 @@
-fastapi
-uvicorn
-pydantic
-sentence-transformers
-transformers
+ultralytics
+opencv-python
+numpy
+matplotlib
+seaborn
+pandas
 torch
-faiss-cpu
-pyyaml
+torchvision
