@@ -12,6 +12,6 @@ BATCH_SIZE = 16
 EPOCHS = 50
 CONF_THRESHOLD = 0.4
 
-DEVICE = "cuda"  # or "cpu"
+DEVICE = "cpu"  # or "cuda"
 
 RESULTS_DIR = BASE_DIR / "results"

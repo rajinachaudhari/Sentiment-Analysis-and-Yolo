@@ -6,14 +6,26 @@ def train_model():
 
     model.train(
         data=str(DATA_YAML),
-        epochs=EPOCHS,
-        imgsz=IMG_SIZE,
-        batch=BATCH_SIZE,
-        device=DEVICE,
+        epochs=10,
+        imgsz=416,
+        batch=2,
+        device="cpu",
         project=str(RESULTS_DIR),
         name="train",
         exist_ok=True
     )
+    
+#     model.train(
+#     data=str(DATA_YAML),
+#     epochs=10,
+#     imgsz=416,
+#     batch=2,
+#     device="cpu",
+#     project=str(RESULTS_DIR),
+#     name="train",
+#     exist_ok=True
+# )
+
 
 if __name__ == "__main__":
     train_model()
